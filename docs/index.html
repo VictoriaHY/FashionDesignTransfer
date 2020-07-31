@@ -1,0 +1,135 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<!-- saved from url=(0050)http://www.icst.pku.edu.cn/course/icb/MRS_MCI.html -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="language" content="english">
+<title>Controllable Text Style Transfer</title>
+<meta name="description" content="Deep Plastic Surgery">
+<meta name="author" content="Shuai Yang">
+<link rel="icon" type="image/x-icon" href="http://www.icst.pku.edu.cn/favicon.ico">
+<link rel="stylesheet" type="text/css" href="DPS/css/project.css">
+</head>
+	<script> 
+	function coming_soon()
+	{
+		alert("We are cleaning up our code to make it more simple and readable");
+	}
+	</script> 
+
+<body>
+<div id="main">
+  
+	<div class="content"><br>
+		<div class="title">
+			<p class="banner"align="center">Accepted by ACM MM 2020</p>
+			<h1>From Design Draft to Real Attire: <br/> Unaligned Fashion Image Translation</h1>
+		</div>
+		<div class="authors" style="width:95%">
+			<div class='author'>
+				<A href="https://victoriahy.github.io/" style="text-decoration: none">Yu Han</A>
+		   </div>
+			<div class='author'>
+				 <A href="https://williamyang1991.github.io/" style="text-decoration: none">Shuai Yang</A>
+		    </div>
+			<div class='author'>
+				<A href="https://daooshee.github.io/website/" style="text-decoration: none">Wenjing Wang</A>
+		   </div>	
+			<div class='author'>
+				 <A href="http://39.96.165.147/people/liujiaying.html" style="text-decoration: none">Jiaying Liu</A>
+			</div>			
+		</div>
+		
+		<div class="overview sec">
+			<div class="image" style="padding: 2em 0 0.5em 0">
+				<table border="0" width='100%' style="FONT-SIZE:15" >
+				 <tr align="center">
+					<td width="40%"><img src="DPS/figures/teaser1.jpg" alt="" width="40%" ></td>
+				 </tr>
+				 </table>							 
+		  		<p style="text-align: justify">Figure 1. Our method allows translations between unaligned design drafts and real fashion items.  Compared with Pix2pix [1], our method generates accurate shapes and preserves vivid texture details.</p>
+			  </div>
+			<div class="image" style="padding: 0em 0 0.5em 0">
+				<table border="0" width='100%' style="FONT-SIZE:15" >
+				 <tr align="center">
+					<td width="95%"><img src="DPS/figures/application.jpg" alt="" width="99%" ></td>
+				 </tr>
+				 </table>							 
+		  		<p style="text-align: justify">Figure 2. Application in fashion design editing. Top row: input design draft and rendered fashion items by different methods. Bottom row: edited design draft and the corresponding modified fashion items.</p>
+	  		</div>
+	  	</div>
+		
+		<div class="abstract_sec">
+			<h2>Abstract</h2>
+			<div class='desp'>
+				<p style="text-align:justify">
+					Fashion manipulation has attracted growing interest due to its great application value, which inspires many researches towards fashion images. However, little attention has been paid to fashion design draft. In this paper, we study a new unaligned translation problem between design drafts and real fashion items, whose main challenge lies in the huge misalignment between the two modalities. We first collect paired design drafts and real fashion item images without pixel-wise alignment. To solve the misalignment problem, our main idea is to train a sampling network to adaptively adjust the input to an intermediate state with structure alignment to the output. Moreover, built upon the sampling network, we present design draft to real fashion item translation network (D2RNet), where two separate translation streams that focus on texture and shape, respectively, are combined tactfully to get both benefits. D2RNet is able to generate realistic garments with both texture and shape consistency to their design drafts. We show that this idea can be effectively applied to the reverse translation problem and present R2DNet accordingly. Extensive experiments on unaligned fashion design translation demonstrate the superiority of our method over state-of-the-art methods.
+				 </p>
+			</div>
+		</div>
+
+		<div class="abstract_sec">
+			<h2>Framework</h2>
+			<div class="images">
+		  		<img src='DPS/figures/framework.jpg' width='100%' alt="Teaser" >
+		  		<p style="text-align: justify">Figure 3. Our D2RNet framework. First, the detail preservation network <em>G<sub>d</sub></em> and the shape correction network <em>G<sub>s</sub></em> translate texture and shape, respectively. Then, the two streams are combined by the fusion network to generate the final output. Notice that the result of <em>G<sub>d</sub></em> has more detailed patterns of the T-shirt but an irregular shape of the pants, while the shape of the pants in <em>G<sub>s</sub></em> is appropriate. The fused result <em>C</em> has both detailed patterns and fine shape.</p>
+			  </div>
+			<div class="images">
+				<img src='DPS/figures/framework2label.jpg' width='100%' alt="Teaser" >
+				<p style="text-align: justify">Figure 4. Our R2DNet framework. The appearance generation network <em>G<sub>a</sub></em> consists of a saliency-based sampling layer and a generator. Using the input real fashion item <em>r</em> and the exemplary target model <em>e</em>, <em>G<sub>a</sub></em> generates a preliminary design draft image <em>B<sub>a</sub></em>. This result is then refined with the help of <em>e</em> and <em>t<sub>a</sub></em> through the fusion network.</p>
+			</div>
+	  	</div>	
+
+		
+		<div class="download_sec">
+			<h2>Resources</h2>
+			<div>
+				<li><strong>Paper</strong>: <a href="https://arxiv.org/abs/2001.02890">arXiv</a></li>
+				<li><strong>Supplementary Material</strong>: <a href="./DPS/files/Draft-supp.pdf">PDF</a> (26.9MB)</li>
+				<li><strong>Dataset</strong>: Coming soon</li>
+				<li><strong>Released Code</strong>: Coming soon</li>
+			</div>
+		</div>
+
+		<div class='citation_sec'>
+			<h2>Citation</h2>
+			<p class='bibtex'>@inproceedings{Han2020Design,
+ title={From Design Draft to Real Attire: Unaligned Fashion Image Translation},
+ author={Han, yu and Yang, Shuai and Wang, Wenjing and Liu, Jiaying},
+ booktitle={ACM Multimedia},
+ year={2020}
+}</p>
+		</div>
+
+		<div class="experiments_sec">
+			<h2>Selected Results</h2>
+			<div id="images">
+				<img src="DPS/figures/paper1.jpg" alt="" width="100%" >		
+				<P style="text-align: justify">Figure 5. Our D2RNet compared with CycleGAN [3], Pix2pix [1], Pix2pixHD [2] and SPADE [4].</P>	
+			</div>	
+			<div id="images">
+				<img src="DPS/figures/paper2.jpg" alt="" width="100%" >		
+				<P style="text-align: justify">Figure 6. Our R2DNet compared with CycleGAN [3], Pix2pix [1], StarGAN [5] and Pix2pixSC [6].</P>	
+			</div>			
+			
+		</div>
+		
+		<div class="reference_sec">
+		<h2>Reference</h2>
+		  <div class="bib" style="text-align: justify">
+		    <p>[1] P. Isola, J.Y. Zhu, T. Zhou, A.A. Efros. Image-to-image translation with conditional adversarial networks. CVPR 2017.</p>
+		    <p>[2] T.C. Wang, M.Y. Liu, J.Y. Zhu, A. Tao, J. Kautz, B. Catanzaro. High-resolution image synthesis and semantic manipulation with conditional GANs. CVPR 2018.</p>
+		  	<p>[3] J.Y. Zhu, T. Park, P. Isola, A.A. Efros. Unpaired Image-to-Image Translation Using Cycle-Consistent Adversarial Networks. ICCV 2017.</p>
+			<p>[4] T. Park, M.Y. Liu, T.C. Wang, J.Y. Zhu. Semantic Image Synthesis with Spatially-Adaptive Normalization. CVPR 2019.</p>
+			<p>[5] Y. Choi, M. Choi, M. Kim, J.W. Ha, S. Kim, J. Choo. StarGAN: Unified Generative Adversarial Networks for Multi-Domain Image-to-Image Translation. CVPR 2018.</p>
+			<p>[6] M. Wang, G.Y. Yang, R.L. Li, R.Z. Liang, S.H. Zhang, P.M. Hall, S.M. Hu. Example-Guided Style-Consistent Image Synthesis from Semantic Labeling. CVPR 2019.</p>
+		  </div>
+	</div>
+		
+		
+		<br></br> 
+
+
+	<p class="banner"align="center">Last update: July 2020</p>
+  </div>
+</div>
+</body>
+</html>

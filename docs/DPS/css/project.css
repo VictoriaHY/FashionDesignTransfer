@@ -1,0 +1,141 @@
+@font-face {
+    font-family: "gandhi_sansregular";
+    src: url('../fonts/GandhiSans-Regular-webfont.eot');
+    src: url('../fonts/GandhiSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/GandhiSans-Regular-webfont.woff') format('woff'),
+         url('../fonts/GandhiSans-Regular-webfont.ttf') format('truetype'),
+         url('../fonts/GandhiSans-Regular-webfont.svg#gandhi_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+body {
+    text-rendering:optimizeLegibility; 
+    font-size:1em; line-height:22px; color:#333; background:#F8F8F8; 
+	font-family: 'gandhi_sansregular';
+}
+
+.title h1{
+	font-family: "Microsoft YaHei", 'gandhi_sansregular';
+}
+
+div.content {
+    width:850px; margin:5px auto; padding:3em 1em 1em 1em;
+}
+
+h1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    line-height:150%;
+    text-align: center;
+    font-size:26pt;
+}
+
+.banner{
+  text-align:center;
+  font-size:12pt;
+  line-height:100%;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+div.sec {
+    padding: 0.0em 0;
+}
+
+div.authors{
+    text-align: center;
+    width: 90%;
+    margin:auto;
+    font-size:14pt;
+}
+
+div.author{
+    font-weight:bold;
+    display: inline;
+    padding: 0 0.7em;
+}
+
+div.links {
+    padding-top: 1em;
+}
+
+div.affiliation{
+}
+
+.bibtex {
+    white-space: pre;
+}
+
+
+div.link{
+    display: inline;
+    padding-right: 1em;
+}
+
+div.picture_wrapper {
+	text-align:center;
+    overflow:visible; 
+    padding: 2em 0 0.5em 0;
+    width:850px;
+}
+.picture_wrapper img { 
+    width:850px;
+}
+
+div.desp {
+
+}
+
+.download_sec a{
+	text-decoration:none;
+	color: #665cbe;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+.download_sec a:hover{
+	color:#000000;
+}
+
+
+.author a{
+	text-decoration:none;
+	color: #665cbe;
+	transition: 0.5s ease;
+	-o-transition: 0.5s ease;
+	-webkit-transition: 0.5s ease;
+}
+.author a:hover{
+	color:#000000;
+}
+
+.download_sec li{
+	padding-bottom: 8px;
+}
+
+.download_sec{
+	padding: 0.5em 0 0.5em 0;
+}
+.abstract_sec{
+	padding: 0.5em 0 0.5em 0;
+}
+.videos_sec{
+	padding: 0.5em 0 0.5em 0;
+	display: none;
+}
+.citation_sec{
+	padding: 0.5em 0 0.5em 0;
+	/*display: none;*/
+}
+.experiments_sec{
+	padding: 0.5em 0 0.5em 0;
+	/*display: none;*/
+}
+
+.bibtex{
+	padding-left: 20px;
+	font-family: "Courier New", Courier, 'gandhi_sansregular', monospace;
+}
