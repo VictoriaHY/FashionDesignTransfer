@@ -3,7 +3,7 @@
 This is the official PyTorch implementation of the paper [From Design Draft to Real Attire: Unaligned Fashion Image Translation](https://victoriahy.github.io/MM2020/) by: 
 
 <div align="center">
-<img src="https://github.com/VictoriaHY/MM2020/blob/5633f4b26f86f3fd1bd5d99fa7ddde6e706a3c2b/pics/authors.jpg" height="160px">
+<img src="https://github.com/VictoriaHY/MM2020/blob/e6137ff65d971bd4316a74cc71285841e0f82b6e/pics/authors.jpg" height="160px">
 </div>
 
 This paper allows translations between unaligned design drafts and real fashion items. Compared with Pix2pix, our method generates accurate shapes and preserves vivid texture details:
