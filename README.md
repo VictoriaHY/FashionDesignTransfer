@@ -1,6 +1,6 @@
 ## Fashion Design Transfer
 
-This is the official PyTorch implementation of the paper [From Design Draft to Real Attire: Unaligned Fashion Image Translation](https://victoriahy.github.io/MM2020/) by: 
+This is the official PyTorch implementation of the paper [From Design Draft to Real Attire: Unaligned Fashion Image Translation](https://victoriahy.github.io/FashionDesignTransfer/) by: 
 
 <div align="center">
 <img src="https://github.com/VictoriaHY/MM2020/blob/e6137ff65d971bd4316a74cc71285841e0f82b6e/pics/authors.jpg" height="160px">
