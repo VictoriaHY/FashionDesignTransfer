@@ -1,7 +1,7 @@
 ## Network
 
 <div align="center">
-<img src="https://github.com/VictoriaHY/MM2020/blob/4d441fbef1f7b065190502680158408376b752a5/pics/framework.jpg" height="160px">
+<img src="https://github.com/VictoriaHY/MM2020/blob/4d441fbef1f7b065190502680158408376b752a5/pics/framework2label.jpg" height="160px">
 </div>
 
 ## Usage
