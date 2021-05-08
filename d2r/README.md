@@ -10,13 +10,13 @@
 python xxx.py --dataroot ./data --name xxx --model model_name --direction BtoA(or B2A)
 ```
 
-train.py: training $G_d$and $G_s$
+train.py: training G_d and G_s
 
-train2.py: traiining the two-step network after $G_d$ (fix $G_d$)
+train2.py: traiining the two-step network after G_d (fix G_d)
 
-train3.py: training fusion network for $G_d$ and $G_s$ (fix $G_d$ and $G_s$)
+train3.py: training fusion network for G_d and G_s (fix G_d and G_s)
 
-test.py: test $G_d$ and $G_s$
+test.py: test G_d and G_s
 
-test1.py: test the fusion network of  $G_d$ and $G_s$
+test1.py: test the fusion network of G_d and G_s
 
